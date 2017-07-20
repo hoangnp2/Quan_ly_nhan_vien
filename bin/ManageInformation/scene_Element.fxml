@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="207.0" prefWidth="434.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ManageInformation.ElementController">
+   <children>
+      <Button fx:id="butAdd" layoutX="351.0" layoutY="143.0" mnemonicParsing="false" onAction="#butAddControler" prefHeight="5.0" prefWidth="16.0" />
+      <Label layoutX="151.0" layoutY="14.0" prefHeight="52.0" prefWidth="132.0" text="Thêm Đơn Vị">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="79.0" prefHeight="17.0" prefWidth="27.0" text="Tên" />
+      <Label layoutX="14.0" layoutY="117.0" text="ID" />
+      <TextField fx:id="tefName" layoutX="77.0" layoutY="75.0" prefHeight="25.0" prefWidth="243.0" />
+      <TextField fx:id="tefID" layoutX="77.0" layoutY="113.0" prefHeight="25.0" prefWidth="243.0" />
+   </children>
+</Pane>

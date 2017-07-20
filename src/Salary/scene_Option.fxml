@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="671.0" prefWidth="744.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Salary.OptionController">
+   <children>
+      <Pane layoutY="-7.0" prefHeight="800.0" prefWidth="1000.0">
+         <children>
+            <ListView fx:id="livDepartments" layoutX="14.0" layoutY="73.0" prefHeight="348.0" prefWidth="145.0" />
+            <Label layoutX="23.0" layoutY="21.0" prefHeight="36.0" prefWidth="128.0" text="Chọn Đơn Vị">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="butSelect" layoutX="41.0" layoutY="440.0" mnemonicParsing="false" onAction="#select" prefHeight="25.0" prefWidth="92.0" text="Chọn" />
+            <Button fx:id="butSelectAll" layoutX="41.0" layoutY="476.0" mnemonicParsing="false" onAction="#selectAll" prefHeight="25.0" prefWidth="92.0" text="Chọn Tất Cả" />
+            <TableView fx:id="tableS" layoutX="181.0" layoutY="73.0" prefHeight="348.0" prefWidth="739.0">
+               <columns>
+                  <TableColumn fx:id="tbcName" prefWidth="157.0" text="Tên" />
+                  <TableColumn fx:id="tbcTitle" minWidth="0.0" prefWidth="109.0" text="Chức Danh" />
+                  <TableColumn fx:id="tbcSalary" prefWidth="113.0" text="Lương Gốc" />
+                  <TableColumn fx:id="tbcDate1" prefWidth="107.0" text="Ngày trong tháng" />
+                  <TableColumn fx:id="tbcDate2" prefWidth="134.0" text="Ngày làm việc thực tế" />
+                  <TableColumn fx:id="tbcResult" prefWidth="118.0" text="Kết Quả" />
+               </columns>
+            </TableView>
+            <Button fx:id="butTL" layoutX="839.0" layoutY="440.0" mnemonicParsing="false" onAction="#calSalary" prefHeight="25.0" prefWidth="81.0" text="Tính Lương" />
+            <Button fx:id="butSave" onAction="#saveTable" layoutX="741.0" layoutY="440.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="81.0" text="Lưu trữ" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

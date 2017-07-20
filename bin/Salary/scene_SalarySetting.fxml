@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Salary.SetterController">
+   <children>
+      <Pane prefHeight="626.0" prefWidth="487.0">
+         <children>
+            <TableView fx:id="tableST" layoutX="6.0" layoutY="38.0" prefHeight="513.0" prefWidth="461.0">
+              <columns>
+                <TableColumn fx:id="tbcTitle2" prefWidth="199.0" text="Chức Danh" />
+                <TableColumn fx:id="tbcSalary2" prefWidth="261.0" text="Mức Lương" />
+              </columns>
+               <contextMenu>
+                  <ContextMenu fx:id="cmnDelete">
+                    <items>
+                      <MenuItem fx:id="mniDelete" mnemonicParsing="false" text="Xóa" />
+                    </items>
+                  </ContextMenu>
+               </contextMenu>
+            </TableView>
+            <Button fx:id="butAdd2" layoutX="420.0" layoutY="559.0" mnemonicParsing="false" onAction="#ButAddController" prefHeight="40.0" prefWidth="45.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

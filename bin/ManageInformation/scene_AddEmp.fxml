@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="537.0" prefWidth="542.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ManageInformation.addEmpController">
+   <children>
+      <Pane prefHeight="547.0" prefWidth="542.0">
+         <children>
+            <Button fx:id="butSave" alignment="CENTER" layoutX="378.0" layoutY="482.0" mnemonicParsing="false" onAction="#saveCl" prefHeight="2.0" prefWidth="24.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <TabPane layoutX="10.0" layoutY="10.0" prefHeight="470.0" prefWidth="532.0" tabClosingPolicy="UNAVAILABLE">
+         <tabs>
+            <Tab text="Thông Tin Cá Nhân">
+               <content>
+                  <Pane fx:id="tef" prefHeight="441.0" prefWidth="514.0">
+                     <children>
+                        <Label layoutX="14.0" layoutY="69.0" prefHeight="25.0" prefWidth="40.0" text="Tên" />
+                        <Label layoutX="103.0" layoutY="39.0" />
+                        <ImageView fx:id="ImageAva" fitHeight="200.0" fitWidth="150.0" layoutX="359.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label layoutX="16.0" layoutY="112.0" prefHeight="30.0" prefWidth="58.0" text="Ngày Sinh" />
+                        <Label layoutX="17.0" layoutY="199.0" prefHeight="38.0" prefWidth="84.0" text="Mã Nhân Viên" textFill="#1e1d1d" />
+                        <Label layoutX="24.0" layoutY="255.0" prefHeight="36.0" prefWidth="70.0" text="Quốc Tịch" />
+                        <Label layoutX="22.0" layoutY="316.0" text="Giới Tính" />
+                        <Label layoutX="16.0" layoutY="167.0" text="Số CMTND" />
+                        <TextField fx:id="tefName" layoutX="101.0" layoutY="69.0" prefHeight="25.0" prefWidth="200.0" />
+                        <TextField fx:id="tefID" layoutX="101.0" layoutY="206.0" />
+                        <TextField fx:id="tefNationality" layoutX="101.0" layoutY="261.0" />
+                        <DatePicker fx:id="dapBirthday" layoutX="101.0" layoutY="115.0" prefHeight="25.0" prefWidth="200.0" />
+                        <TextField fx:id="tefIDcard" layoutX="101.0" layoutY="163.0" />
+                        <TextField fx:id="tefPhoneNumbers" layoutX="103.0" layoutY="369.0" />
+                        <Label layoutX="16.0" layoutY="373.0" prefHeight="17.0" prefWidth="74.0" text="Số Điện Thoại" />
+                        <ComboBox fx:id="cbSex" layoutX="101.0" layoutY="312.0" prefHeight="25.0" prefWidth="130.0" />
+                        <Button fx:id="butImage" onAction="#selectAIamge" layoutX="408.0" layoutY="225.0" mnemonicParsing="false" text="Chọn Ảnh" />
+                     </children>
+                  </Pane>
+               </content>
+            </Tab>
+            <Tab text="Chức Vụ">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="508.0" prefWidth="507.0">
+                     <children>
+                        <TextField fx:id="tefPosition" layoutX="113.0" layoutY="61.0" />
+                        <TextField fx:id="tefTitle" layoutX="113.0" layoutY="127.0" />
+                        <TextField fx:id="tefInstitute" layoutX="113.0" layoutY="187.0" />
+                        <Label layoutX="14.0" layoutY="65.0" prefHeight="17.0" prefWidth="60.0" text="Vị Trí" />
+                        <Label layoutX="14.0" layoutY="131.0" prefHeight="17.0" prefWidth="60.0" text="Chức Danh" />
+                        <Label layoutX="14.0" layoutY="191.0" prefHeight="17.0" prefWidth="60.0" text="Đơn Vị" />
+                        <Label layoutX="160.0" layoutY="25.0" text="Chức Vụ" />
+                        <Label layoutX="160.0" layoutY="251.0" text="Học Vấn" />
+                        <Label layoutX="16.0" layoutY="295.0" text="Trình Độ" />
+                        <Label layoutX="16.0" layoutY="362.0" text="Chứng Chỉ" />
+                        <TextField fx:id="tefedl" layoutX="113.0" layoutY="291.0" />
+                        <TextField fx:id="tefcertificate" layoutX="113.0" layoutY="358.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Quá Trình Làm Việc">
+               <content>
+                  <Pane prefHeight="445.0" prefWidth="532.0">
+                     <children>
+                        <Label layoutX="33.0" layoutY="171.0" prefHeight="25.0" prefWidth="75.0" text="Kỷ Luật" textFill="WHITE" />
+                        <DatePicker fx:id="dapStart" layoutX="143.0" layoutY="73.0" />
+                        <DatePicker fx:id="dapEnd" layoutX="143.0" layoutY="121.0" />
+                        <Label layoutX="30.0" layoutY="77.0" text="Thời Gian Bắt Đầu" />
+                        <Label layoutX="31.0" layoutY="125.0" text="Hạn Hợp Đồng" />
+                        <Label layoutX="25.0" layoutY="346.0" text="Khen Thưởng" textFill="WHITE" />
+                        <Label layoutX="27.0" layoutY="36.0" prefHeight="17.0" prefWidth="89.0" text="Số Hợp Đồng" />
+                        <TextField fx:id="tefIdContract" layoutX="143.0" layoutY="32.0" />
+                     </children>
+                  </Pane>
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

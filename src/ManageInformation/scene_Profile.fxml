@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.Tab?>
+
+<AnchorPane prefHeight="609.0" prefWidth="742.0" styleClass="ba" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ManageInformation.ProfileController">
+   <children>
+      <VBox layoutY="24.0" prefHeight="581.0" prefWidth="203.0" style="-fx-background-color: #FBF5EF;">
+         <children>
+            <TextField fx:id="TestTextFiel" prefHeight="25.0" prefWidth="166.0" />
+            <TreeView fx:id="treeCompany" onContextMenuRequested="#mouseClick" onMouseClicked="#mouseClick" prefHeight="518.0" prefWidth="203.0">
+            </TreeView>
+         </children></VBox>
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="786.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Tính Lương">
+            <items>
+              <MenuItem fx:id="mniSetting" mnemonicParsing="false" onAction="#setting" text="Cài Đặt Lương" />
+                  <MenuItem mnemonicParsing="false" onAction="#calSalary" text="Tính Lương" />
+            </items>
+          </Menu>
+          <Menu fx:id="mnHoTro" mnemonicParsing="false" text="Quản Lý">
+            <items>
+              <MenuItem fx:id="MeniItemAddUser" mnemonicParsing="false" text="Thêm Tài Khoan" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Lịch Sử Hoạt Động">
+              <items>
+                <MenuItem fx:id="mnihistory" mnemonicParsing="false" onAction="#history" text="Xem" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <Pane layoutX="203.0" layoutY="63.0" prefHeight="581.0" prefWidth="583.0">
+         <children>
+            <TableView fx:id="tableE" layoutX="9.0" layoutY="97.0" prefHeight="399.0" prefWidth="568.0">
+              <columns>
+                <TableColumn fx:id="tbcName" prefWidth="158.0" text="Họ Tên" />
+                  <TableColumn fx:id="tbcBirthday" minWidth="0.0" prefWidth="138.0" text="Ngày Sinh" />
+                  <TableColumn fx:id="tbcID" prefWidth="127.0" text="Mã Nhân Viên" />
+                  <TableColumn fx:id="tbcNat" prefWidth="137.0" text="Quốc Tịch" />
+              </columns>
+            </TableView>
+            <Label layoutX="242.0" layoutY="53.0" prefHeight="34.0" prefWidth="203.0" text="Danh Sách Nhân Viên" textAlignment="CENTER" />
+            <Button fx:id="butAdd" layoutX="489.0" layoutY="516.0" mnemonicParsing="false" onAction="#butAddController" prefHeight="0.0" prefWidth="16.0" />
+            <ImageView fx:id="imgWarning" fitHeight="34.0" fitWidth="35.0" layoutX="511.0" layoutY="28.0" onMouseClicked="#showWarning" pickOnBounds="true" preserveRatio="true" />
+         </children></Pane>
+   </children>
+</AnchorPane>

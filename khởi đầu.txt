@@ -1,0 +1,1 @@
+﻿Sử dụng tên tài khoản "TaiKhoan_1" với mật khẩu "12345" trong lần đầu đăng nhập vào chương trình!

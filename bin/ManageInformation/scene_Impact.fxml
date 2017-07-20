@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <children>
+      <Pane prefHeight="265.0" prefWidth="438.0">
+         <children>
+            <Button fx:id="butAdd" layoutX="375.0" layoutY="226.0" mnemonicParsing="false" text="Thêm" />
+            <TextField fx:id="tefId" layoutX="110.0" layoutY="35.0" />
+            <TextArea fx:id="teaContent" layoutX="110.0" layoutY="82.0" prefHeight="46.0" prefWidth="311.0" />
+            <TextArea fx:id="teaCouses" layoutX="110.0" layoutY="154.0" prefHeight="46.0" prefWidth="311.0" />
+            <Label layoutX="14.0" layoutY="39.0" text="Mã Số" />
+            <Label layoutX="14.0" layoutY="96.0" text="Nội Dung" />
+            <Label layoutX="11.0" layoutY="169.0" text="Nguyên Nhân" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
